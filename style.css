@@ -54,11 +54,12 @@ body {
   gap: 15px;
 }
 
+/* ✅ Small, round profile photo */
 .profile-photo {
-  width: 65px;
-  height: 65px;
-  border-radius: 50%;
-  object-fit: cover;
+  width: 40px;          /* smaller size */
+  height: 40px;
+  border-radius: 50%;   /* makes it round */
+  object-fit: cover;    /* keeps image neat */
   border: 2px solid var(--secondary-color);
 }
 
@@ -308,7 +309,7 @@ body.bot-responding .prompt-form #stop-response-btn {
     font-size: 1.7rem;
   }
 
-  /* ✅ Make profile photo smaller on mobile */
+  /* ✅ Make profile photo a bit larger on mobile */
   .profile-photo {
     width: 50px;
     height: 50px;
