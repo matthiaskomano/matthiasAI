@@ -46,6 +46,22 @@ body {
 .container .app-header {
   margin-top: 3vh;
 }
+
+/* ✅ Added header layout for profile photo */
+.app-header .header-top {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+
+.profile-photo {
+  width: 65px;
+  height: 65px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 2px solid var(--secondary-color);
+}
+
 .app-header .heading {
   width: fit-content;
   font-size: 3rem;
@@ -291,6 +307,13 @@ body.bot-responding .prompt-form #stop-response-btn {
   .app-header .sub-heading {
     font-size: 1.7rem;
   }
+
+  /* ✅ Make profile photo smaller on mobile */
+  .profile-photo {
+    width: 50px;
+    height: 50px;
+  }
+
   .container .chats-container {
     gap: 15px;
   }
@@ -318,4 +341,3 @@ body.bot-responding .prompt-form #stop-response-btn {
     display: none;
   }
 }
-In the script.js file, you’ll 
